@@ -3,13 +3,13 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "adminPassword": {
-      "value": "<Enter the password for the Palo Alto user account"
+      "value": "<Enter the password for the Palo Alto user account>"
     },
     "fwVmSize": {
       "value": "Standard_D3_v2"
     },
     "fromGatewayLogin": {
-      "value": "<Enter the public IP address that should allowed to connect to the management interface"
+      "value": "<Enter the public IP address that should allowed to connect to the management interface>"
     },
     "IPAddressPrefix": {
       "value": "<Enter the prefix for all ip addresses in this format: 10.5>"
