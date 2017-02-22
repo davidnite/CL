@@ -1,0 +1,42 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminPassword": {
+      "value": ""
+    },
+    "fwVmSize": {
+      "value": "Standard_D3_v2"
+    },
+    "fromGatewayLogin": {
+      "value": "5.5.5.5"
+    },
+    "IPAddressPrefix": {
+      "value": "10.5"
+    },
+      "virtualNetworkName": {
+          "value": "fwVnet"
+      },
+      "mgmtSubnet": {
+          "value": "Management"
+      },
+      "untrustSubnet": {
+          "value": "Untrust"
+      },
+      "trustSubnet": {
+          "value": "Trust"
+      },
+      "storageAccountName": {
+          "value": "fwstorageacc02222017"
+      },
+      "fwvmName": {
+          "value": "pafirewall"
+      },
+      "adminUserName": {
+          "value": ""
+      },
+      "dmzSubnet": {
+          "value": "DMZ"
+      }
+  }
+}
