@@ -247,9 +247,9 @@
       "location": "[variables('location')]",
       "dependsOn": [
         "[concat('Microsoft.Network/networkSecurityGroups/', variables('nsgname-mgmt'))]",
-        "[concat('Microsoft.Network/routeTables', variables('routeTableTrust'))]",
-        "[concat('Microsoft.Network/routeTables', variables('routeTableDMZ'))]",
-        "[concat('Microsoft.Network/routeTables', variables('routeTableLAN'))]"
+        "[concat('Microsoft.Network/routeTables'/, variables('routeTableTrust'))]",
+        "[concat('Microsoft.Network/routeTables'/, variables('routeTableDMZ'))]",
+        "[concat('Microsoft.Network/routeTables'/, variables('routeTableLAN'))]"
       ],
       "properties": {
         "addressSpace": {
