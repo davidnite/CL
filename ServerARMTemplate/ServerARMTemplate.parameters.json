@@ -1,0 +1,39 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "numberOfVms": {
+            "value": 2
+        },
+        "vNetRGName": {
+            "value": ""
+        },
+        "vNetName": {
+            "value": ""
+        },
+        "subnetName": {
+            "value": ""
+        },
+        "storageAccountName": {
+            "value": ""
+        },
+        "vmName": {
+            "value": ""
+        },
+        "adminUserName": {
+            "value": ""
+        },
+        "domainToJoin": {
+            "value": ""
+        },
+        "domainUsername": {
+            "value": ""
+        },
+        "ouPath": {
+            "value": "OU=Azure;DC=domain;DC=com"
+        },
+        "startingipAddress": {
+            "value": 5
+        }
+    }
+}
