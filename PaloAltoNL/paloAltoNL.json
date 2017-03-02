@@ -91,7 +91,7 @@
     "natPublicIPName": "paNatPublicIP01",
     "nicName": "pa-eth",
     "FWPrivateIPAddressMgmt": "[concat(parameters('IPAddressPrefix'), '.19.20')]",
-    "FWPrivateIPAddressUntrust": "[concat(parameters('IPAddressPrefix'), '.19.4')]",
+    "FWPrivateIPAddressUntrust": "[concat(parameters('IPAddressPrefix'), '.19.69')]",
     "FWPrivateIPAddressTrust": "[concat(parameters('IPAddressPrefix'), '.19.12')]",
     "FWPrivateIPAddressDMZ": "[concat(parameters('IPAddressPrefix'), '.19.28')]",
     "PrivateIPAddress0": "[variables('FWPrivateIPAddressMgmt')]",
