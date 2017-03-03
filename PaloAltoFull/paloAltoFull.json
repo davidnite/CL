@@ -78,6 +78,17 @@
         "description": "This is the size of PAN's firewall VM"
       }
     },
+    "fwSku": {
+      "type": "string",
+      "allowedValues": [
+        "byol",
+        "bundle1",
+        "bundle2"
+      ],
+      "metadata": {
+        "description": "The Sku to use for PAN firewall.  Bundle1-2 options are PAYG"
+      }
+    },
     "fromGatewayLogin": {
       "type": "string",
       "metadata": {
@@ -109,7 +120,6 @@
     "apiVersion": "2015-05-01-preview",
     "location": "[resourceGroup().location]",
     "OSDiskName": "paVmSeries",
-    "fwSku": "byol",
     "fwOffer": "vmseries1",
     "fwPublisher": "paloaltonetworks",
     "mgmtPublicIPName": "mgmtPublicIP",
@@ -506,7 +516,7 @@
           "imageReference": {
             "publisher": "[variables('fwPublisher')]",
             "offer": "[variables('fwOffer')]",
-            "sku": "[variables('fwSku')]",
+            "sku": "[parameters('fwSku')]",
             "version": "latest"
           },
           "osDisk": {
